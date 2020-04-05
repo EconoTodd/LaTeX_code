@@ -1,0 +1,171 @@
+\documentclass[9pt,a4paper]{article}
+\usepackage{geometry}
+\geometry{letterpaper, margin=0.5in}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{float}
+\begin{document}
+\subsection{Ceteris Paribus Shifts}
+
+	\begin{figure}[H]
+		
+	\begin{minipage}{3in}
+	
+			
+			\caption{Increase in Demand}
+			
+			\begin{tikzpicture}[scale=0.45]
+			
+			%y axis.....................
+			\draw [->] (0,0) to (0,12) node [left] {$price$};
+			
+			%x axis......................
+			\draw [->] (0,0) to (12,0) node [below] {$quantity$};
+			
+			% D curve...................
+			\draw [thick] (0,10)  to  (10,0)  node [above right] {$D_{1}$};
+			
+			% increase D curve...................
+			\draw [thick] (1,12)  to  (12,1)  node [above right] {$D_{2}$};
+			
+			% S curve...................
+			\draw [thick] (0,0)  to  (10,10)  node [above right] {$S$};
+			
+			% dashed lines to equilibrium.............
+			\draw [dashed] (0,5) node [left] {$P_{1}$} to (5,5); 
+			\draw [dashed] (5,5) to (5,0) node [below] {$Q_{1}$};
+			
+			% dashed lines to new equilibrium.........
+			\draw [dashed] (0,6.5) node [left] {$P_{2}$} to (6.5,6.5); 
+			\draw [dashed] (6.5,6.5) to (6.5,0) node [below] {$Q_{2}$};
+			
+			% equilibrium point.......................
+			\node [black] at (5,5) {\textbullet};
+			
+			% new equilibrium point..................
+			\node [black] at (6.5,6.5) {\textbullet};
+			
+			\end{tikzpicture}
+	
+	\end{minipage}
+	\hspace{0.2in}
+	\begin{minipage}{3in}
+	
+			
+			\caption{Increase in Supply}
+			
+			\begin{tikzpicture}[scale=0.45]
+			
+			%y axis.....................
+			\draw [->] (0,0) to (0,12) node [left] {$price$};
+			
+			%x axis......................
+			\draw [->] (0,0) to (12,0) node [below] {$quantity$};
+			
+			% D curve...................
+			\draw [thick] (0,10)  to  (10,0)  node [above right] {$D_{1}$};
+			
+			% S curve...................
+			\draw [thick] (0,0)  to  (10,10)  node [above right] {$S_{1}$};
+			
+			% increase S curve...................
+			\draw [thick] (3,0)  to  (11,8)  node [above right] {$S_{2}$};
+			
+			% dashed lines to equilibrium.............
+			\draw [dashed] (0,5) node [left] {$P_{1}$} to (5,5); 
+			\draw [dashed] (5,5) to (5,0) node [below] {$Q_{1}$};
+			
+			% dashed lines to new equilibrium.....
+			\draw [dashed] (0,3.5) node [left] {$P_{2}$} to (6.5,3.5); 
+			\draw [dashed] (6.5,3.5) to (6.5,0) node [below] {$Q_{2}$};
+			
+			% equilibrium point.......................
+			\node [black] at (5,5) {\textbullet};
+			
+			% new equilibrium point...................
+			\node [black] at (6.5,3.5) {\textbullet};
+			
+			\end{tikzpicture}
+		\end{minipage}
+\end{figure}
+\bigskip
+
+\bigskip
+
+\begin{figure}[H]
+\begin{minipage}{3in}
+		
+			\caption{Decrease in Demand}
+			\begin{tikzpicture}[scale=0.45]
+			
+			%y axis.....................
+			\draw [->] (0,0) to (0,12) node [left] {$price$};
+			
+			%x axis.....................
+			\draw [->] (0,0) to (12,0) node [below] {$quantity$};
+			
+			% D curve...................
+			\draw [thick] (0,10)  to  (10,0)  node [above right] {$D_{1}$};
+			
+			% decrease D curve..........
+			\draw [thick] (0,7)  to  (7,0)  node [above right] {$D_{2}$};
+			
+			% S curve...................
+			\draw [thick] (0,0)  to  (10,10)  node [above right] {$S$};
+			
+			% dashed lins to equilibrium..............
+			\draw [dashed] (0,5) node [left] {$P_{1}$} to (5,5); 
+			\draw [dashed] (5,5) to (5,0) node [below] {$Q_{1}$};
+			
+			% dashed lines to new equilibrium.........
+			\draw [dashed] (0,3.5) node [left] {$P_{2}$} to (3.5,3.5); 
+			\draw [dashed] (3.5,3.5) to (3.5,0) node [below] {$Q_{2}$};
+			
+			% equilibrium point.......................
+			\node [black] at (5,5) {\textbullet};
+			
+			% new equilibrium point...................
+			\node [black] at (3.5,3.5) {\textbullet};
+			
+			\end{tikzpicture}
+	\end{minipage}
+	\hspace{0.2in}
+	\begin{minipage}{3in}
+			
+			\caption{Decrease in Supply}
+			
+			\begin{tikzpicture}[scale=0.45]
+			
+			%y axis.....................
+			\draw [->] (0,0) to (0,12) node [left] {$price$};
+			
+			%x axis......................
+			\draw [->] (0,0) to (12,0) node [below] {$quantity$};
+			
+			% D curve...................
+			\draw [thick] (0,10)  to  (10,0)  node [above right] {$D$};
+			
+			% S curve...................
+			\draw [thick] (0,0)  to  (10,10)  node [above right] {$S_{1}$};
+			
+			% decrease S curve...................
+			\draw [thick] (0,3)  to  (8,11)  node [above right] {$S_{2}$};
+			
+			% dashed lins to equilibrium..............
+			\draw [dashed] (0,5) node [left] {$P_{1}$} to (5,5); 
+			\draw [dashed] (5,5) to (5,0) node [below] {$Q_{1}$};
+			
+			% dashed lines to new equilibrium.........
+			\draw [dashed] (0,6.5) node [left] {$P_{2}$} to (3.5,6.5); 
+			\draw [dashed] (3.5,6.5) to (3.5,0) node [below] {$Q_{2}$};
+			
+			% equilibrium point.......................
+			\node [black] at (5,5) {\textbullet};
+			
+			% new equilibrium point...................
+			\node [black] at (3.5,6.5) {\textbullet};
+			\end{tikzpicture}
+	\end{minipage}
+\end{figure}
+
+\end{document}
