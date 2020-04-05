@@ -1,0 +1,27 @@
+\documentclass[9pt,a4paper]{article}
+\usepackage{geometry}
+\geometry{letterpaper, margin=0.5in}
+\begin{document}
+		\begin{table}
+		
+		\centering
+		
+		\caption{U.S. Tax Brackets as of March 2020}
+		
+		\bigskip
+		
+		\begin{tabular}{|c|c|c|c|c|}     
+			\hline                                                                                                                              
+			Tax rate & Single filers          & Married filing jointly  & Married filing separately    & Head of household     \\
+			\hline
+			10\%     & \$0 -- \$9,700         & \$0 -- \$19,400         & \$0 -- \$9,700               & \$0 -- \$13,850       \\
+			12\%     & \$9,701 -- \$39,475    & \$19,401 -- \$78,950    & \$9,701 -- \$39,475          & \$13,851 -- \$52,850  \\
+			22\%     & \$39,476 -- \$84,200   & \$78,951 -- \$168,400   & \$39,476 -- \$84,200         & \$52,851 -- \$84,200  \\
+			24\%     & \$84,201 -- \$160,725  & \$168,401 -- \$321,450  & \$84,201 -- \$160,725        & \$84,201 -- \$160,700 \\
+			32\%     & \$160,726 -- \$204,100 & \$321,451 -- \$408,200  & \$160,726 -- \$204,100       & \$160,701 -- \$204,100\\
+			35\%     & \$204,101 -- \$510,300 & \$408,201 -- \$612,350  & \$204,101 -- \$306,750       & \$204,101 -- \$510,300\\
+			37\%     & \$510,301 or more      & \$612,351 or more       & \$306,751 or more            & \$510,301 or more     \\
+			\hline
+		\end{tabular}
+	\end{table}
+\end{document}
