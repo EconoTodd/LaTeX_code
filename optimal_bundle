@@ -1,0 +1,40 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{float}
+\begin{document}
+
+\begin{figure}[H]
+	
+	\centering
+	
+	\caption{Optimal Bundle at Tangency of Budget and Indifference Curve}
+	
+	\bigskip
+	
+	\begin{tikzpicture}[scale=0.8]
+	
+	% x and y axis
+	\draw[thick,<->] (0,10) node[above]{$y$}--(0,0)--(10,0) node[right]{$x$};
+	
+	% the indifference curve
+	\draw(2,10) ..controls (3.33,6) and (6,3.33) .. (10,2) node[right]{$IC$};
+	
+	% various labels
+	\node [below left] at (0,0) {$0$};
+	\node [above right] at (5,5) {$Slope_{BC} = MRS_{xy}$};
+	
+	% optimal bundle
+	\node [below] at (5,0) {$x^{*}$};
+	\node [left] at (0,5) {$y^{*}$};
+	\draw [dashed] (0,5)--(5,5)--(5,0);
+	
+	% budget constraint
+	\draw(1,9)--(9,1) node[right]{$p_xx+p_yy=m$};
+	
+	\end{tikzpicture}
+	
+\end{figure}
+
+\end{document}
