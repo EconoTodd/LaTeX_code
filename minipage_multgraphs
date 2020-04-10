@@ -1,0 +1,128 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{float}
+\usepackage{geometry}
+\geometry{letterpaper, margin=0.5in}
+\author{Todd R. Yarbrough, Ph.D.}
+\begin{document}
+	
+	
+		\begin{figure}[H]
+		
+		
+		\begin{center}
+			\caption{A Market In Equilibrium is Efficient}
+		\end{center}
+		
+		\begin{minipage}{2in}
+			
+			\begin{tikzpicture}[scale=0.35]
+			
+			% x and y axis.....................
+			\draw [->] (0,0) to (0,12) node [left] {$P$};
+			\draw [->] (0,0) to (11,0) node [below] {$Q$};
+			
+			% S and D curves...................
+			\draw [thick] (0,10) node [left] {\$10}  to  (10,0)  node [above right] {$D$};
+			\draw [thick] (0,0)  to  (10,10)  node [above right] {$S$};
+			
+			% dashed and other lines...........
+			\draw [dashed] (0,5) node [left] {\$5} to (5,5); 
+			\draw [dashed] (5,5) to (5,0) node [below] {$100$};
+			
+			% color fills...................
+			\fill[fill=green!90!, opacity=0.3] (5,5) -- (0,10) -- (0,5);
+			\fill[fill=blue!90!, opacity=0.3] (5,5) -- (0,0) -- (0,5);
+			
+			% labeling............................
+			\node at (8,5) {$Q^{S}=Q^{D}$};
+			\node [black] at (5,5) {\textbullet};
+			\node at (2,5.5) {\footnotesize \textbf{CS}};
+			\node at (2,4.5) {\footnotesize \textbf{PS}};
+			
+			% divider.............................
+			\draw [dashed] (12,0) -- (12,12);
+			
+			\end{tikzpicture}
+			
+		\end{minipage}
+		\hspace{0cm}
+		\begin{minipage}{2in}
+			
+			\begin{tikzpicture}[scale=0.35]
+			
+			% x and y axis.....................
+			\draw [->] (0,0) to (0,12) node [left] {$P$};
+			\draw [->] (0,0) to (11,0) node [below] {$Q$};
+			
+			% S and D curves..................
+			\draw [thick] (0,10) node [left] {\$10} to  (10,0)  node [above right] {$D$};
+			\draw [thick] (0,0)  to  (10,10)  node [above right] {$S$};
+			
+			% dashed and other lines...........
+			\draw [dashed] (0,5) node [left] {\$5} to (5,5); 
+			\draw [dashed] (0,3) node[left] {\$3} to (3,3); 
+			\draw [blue, thick] (0,7) node[left] {\$7} to (7,7); 
+			\draw [blue, dashed] (3,7) to (3,0) node [below] {$60$};
+			\draw [blue, dashed] (7,7) to (7,0) node [below] {$140$};
+			
+			% color fills.......................
+			\fill[fill=red!70!, opacity=0.3] (5,5) -- (3,7) -- (3,3);
+			\fill[fill=green!90!, opacity=0.3] (0,10) -- (3,7) -- (0,7) -- (0,10);
+			\fill[fill=blue!90!, opacity=0.3] (0,0) -- (3,3) -- (3,7) -- (0,7);
+			
+			% labels............................
+			\draw [thick, ->] (8,4) node [below right] {$DWL$} to (4,5);
+			\node at (5,8) {$Q^{S}>Q^{D}$}; 
+			\node at (1,7.5) {\footnotesize \textbf{CS}};
+			\node at (2,4.5) {\footnotesize \textbf{PS}};
+			\node [black] at (5,5) {\textbullet};
+			\node [below] at (5,0) {$100$};
+			
+			% divider...........................
+			\draw [dashed] (12,0) -- (12,12);
+			
+			\end{tikzpicture}
+			
+		\end{minipage}
+		\hspace{0.0cm}
+		\begin{minipage}{2in}
+			
+			\begin{tikzpicture}[scale=0.35]
+			
+			%y axis.....................
+			\draw [->] (0,0) to (0,12) node [left] {$P$};
+			\draw [->] (0,0) to (12,0) node [below] {$Q$};
+			
+			% S and D curves...................
+			\draw [thick] (0,10) node [left] {\$10}  to  (10,0)  node [above right] {$D$};
+			\draw [thick] (0,0)  to  (10,10)  node [above right] {$S$};
+			
+			% dashed and other lines.................
+			\draw [dashed] (0,5) node [left] {\$5} to (5,5); 
+			\draw [dashed] (0,7) node[left] {\$7} to (3,7); 
+			\draw [blue, dashed] (3,7) to (3,0) node [below] {$60$};
+			\draw [blue, dashed] (7,7) to (7,0) node [below] {$140$};
+			\draw [blue, thick] (0,3) node[left] {\$3} to (7,3);
+			
+			% color fills.............................
+			\fill[fill=red!70!, opacity=0.3] (5,5) -- (3,7) -- (3,3);
+			\fill[fill=green!90!, opacity=0.3] (0,10) -- (3,7) -- (3,3) -- (0,3) -- (0,10);
+			\fill[fill=blue!90!, opacity=0.3] (0,0) -- (3,3) -- (0,3) -- (0,0);
+			
+			% labels..................................
+			\draw [thick, ->] (8,4) node [below right] {$DWL$} to (4,5);
+			\node at (2,5.5) {\footnotesize \textbf{CS}};
+			\node at (1,2) {\footnotesize \textbf{PS}};
+			\node at (5,2) {$Q^{S}<Q^{D}$};
+			\node [black] at (5,5) {\textbullet};
+			\node [below] at (5,0) {$100$};
+			
+			\end{tikzpicture}
+			
+		\end{minipage}
+	
+	\end{figure}
+\end{document}
