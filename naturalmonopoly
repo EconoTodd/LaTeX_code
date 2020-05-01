@@ -1,0 +1,79 @@
+\documentclass[9pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{pgfplots}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{geometry}
+\geometry{margin=0.75in}
+\usepackage{graphicx}
+\pgfplotsset{every tick label/.append style={font=\Large}}
+
+
+\usepackage{multirow,array}
+\author{Todd R. Yarbrough, Ph.D.}
+
+
+\begin{document}
+
+\begin{figure}[H]
+	
+	\centering
+	
+	\caption{Natural Monopolies have Economies of Scale}
+	
+	\bigskip
+	
+	\begin{tikzpicture}[scale=1]
+	
+	%y axis.....................
+	\draw [->] (0,0) to (0,12) node [left] {$price$};
+	
+	%x axis......................
+	\draw [->] (0,0) to (12,0) node [below] {$quantity$};
+	
+	% D curve...................
+	\draw [thick] (0,10)  to  (10,0)  node [above right] {$D$};
+	
+	% MR curve....................
+	\draw [thick] (0,10) to (5,0);
+	\node [above right] at (5,0) {$MR$};
+	
+	% MC=S curve...................
+	\draw [thick] (0,1)  to  (12,1)  node [right] {$MC$};
+	
+	% ATC curve...................
+	\draw [thick] (0.25,8.5) to [out=-88,in=180]  (11,2.5) node[right] {$ATC$};
+	
+	% dashed lines to equilibrium.............
+	\draw [dashed] (0,5.5) node [left] {$P_{M}$} to (4.55,5.5); 
+	\draw [dashed] (4.5,5.5) to (4.5,0) node [below] {$Q_{M}$};
+	
+	% dashed lines to new equilibrium.........
+	\draw [dashed] (0,1) node [left] {$P_{PC}$} to (9,1); 
+	\draw [dashed] (9,1) to (9,0) node [below] {$Q_{PC}$};
+	
+	% dashed lines to new equilibrium.........
+	\draw [dashed] (0,2.75) node [left] {$P_{FM}$} to (7.25,2.75); 
+	\draw [dashed] (7.25,2.75) to (7.25,0) node [below] {$Q_{FM}$};
+	
+	% equilibrium points.......................
+	\node [black] at (4.5,5.5) {\LARGE \textbullet};
+	\node [black] at (7.25,2.75) {\LARGE \textbullet};
+	\node [black] at (9,1) {\LARGE \textbullet};
+	
+	% labels..............................
+	\node [black, above right] at (4.5,5.5) {Monopolist};
+	\node [black, above right] at (7.25,2.75) {Fair Market};
+	\node [black, above right] at (9,1) {Competitive};
+	
+	\node at (5.75,2) {A};
+	\node at (5,4) {B};
+	\node at (8, 1.25) {C};
+	
+	\end{tikzpicture}
+	
+\end{figure}
+
+\end{document}
