@@ -1,0 +1,74 @@
+\documentclass[9pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{geometry}
+\geometry{margin=0.75in}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+
+
+
+\usepackage{multirow,array}
+\author{Todd R. Yarbrough, Ph.D.}
+
+
+
+
+
+\begin{document}
+	
+	\begin{figure}[H]
+		
+		\centering
+		
+		\caption{Monopolistic Competition in the Long-run}
+		
+		\bigskip
+
+\begin{tikzpicture}[scale=0.5]
+
+%axes.....................
+\draw [->] (0,0) to (0,12) node [left] {$P$};
+\draw [->] (0,0) to (12,0) node [below] {$Q$};
+
+% D, MR, ATC, and MC curves.......................
+\draw [thick] (0,6)  to  (6.65,0)  node [above right] {$D_{lr}$};
+\draw [opacity=0.75,thick, blue, dashed] (0,10)  to  (10,0)  node [above right] {$D_{sr}$};
+
+
+\draw [thick] (0,6) to (2.25,1);
+\node at (2.55,0.5) { $MR_{lr}$};
+\draw [opacity=0.75,thick, blue, dashed] (0,10) to (4.5,1) node [below] {$MR_{sr}$};
+
+\draw [thick] (0.75,5.75) to [out=-65,in=-145]  (9,5.9) node [right] {$ATC$};
+
+\draw [thick] (0,0)  to  (10,10)  node [above right] {$MC$};
+
+% dashed lines.......................
+\draw [dashed] (0,4.45) node [left] {$P_{lr} = ATC$} to (1.9,4.45); 
+\draw [dashed] (1.85,4.45) to (1.85,0) node [below] {$Q_{lr}$};
+
+
+\draw [opacity=0.75, thick, blue, dashed] (0,6.67) node [left] {$P_{sr}$} to (3.33,6.67); 
+\draw [opacity=0.75,thick, blue, dashed] (3.33,6.67) to (3.33,0) node [below] {$Q_{sr}$};
+
+% points..................
+\node [black] at (1.85,4.45) {\LARGE\textbullet};
+\node [black] at (1.85,1.9) {\LARGE\textbullet};
+
+% commentary..................
+\node at (4.5,10.75) {Firms enter, so};
+\node at (4.5,10) {demand falls};
+\node at (4.5,9.25) {and profits go to zero};
+
+% arrows......................
+\draw[->, thick] (-0.5,6.25) -- (-0.5,4.95);
+
+
+\end{tikzpicture}
+
+\end{figure}
+\end{document}
