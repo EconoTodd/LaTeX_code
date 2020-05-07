@@ -8,15 +8,9 @@
 \geometry{margin=0.75in}
 \usepackage{graphicx}
 \usepackage{pgfplots}
-
-
-
 \usepackage{multirow,array}
+
 \author{Todd R. Yarbrough, Ph.D.}
-
-
-
-
 
 \begin{document}
 	
@@ -51,7 +45,6 @@
 \draw [dashed] (0,4.45) node [left] {$P_{lr} = ATC$} to (1.9,4.45); 
 \draw [dashed] (1.85,4.45) to (1.85,0) node [below] {$Q_{lr}$};
 
-
 \draw [opacity=0.75, thick, blue, dashed] (0,6.67) node [left] {$P_{sr}$} to (3.33,6.67); 
 \draw [opacity=0.75,thick, blue, dashed] (3.33,6.67) to (3.33,0) node [below] {$Q_{sr}$};
 
@@ -67,8 +60,8 @@
 % arrows......................
 \draw[->, thick] (-0.5,6.25) -- (-0.5,4.95);
 
-
 \end{tikzpicture}
 
 \end{figure}
+
 \end{document}
