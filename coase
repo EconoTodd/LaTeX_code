@@ -1,0 +1,292 @@
+\documentclass[11pt]{article}
+\usepackage{xcolor}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage[margin=1in]{geometry}
+\usepackage{tcolorbox}
+\setlength\parindent{0pt}
+
+\begin{document}
+
+\begin{tcolorbox}
+
+\begin{center}
+Scenario 1: steel plant has property right
+\end{center} 
+
+\bigskip
+
+\bigskip
+
+\begin{minipage}{0.48\linewidth}
+
+\underline{Without Bargaining}: Plant emits $e^{max}$
+
+\bigskip
+
+Total Benefit = \$1,000
+
+\medskip
+
+Total Damage = \$1,000
+
+\medskip
+
+Social Welfare from Steel = \$1,000 - \$1,000 = \$0
+
+\bigskip
+
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.48\linewidth}
+\flushleft
+\begin{tikzpicture}[scale=0.4]
+
+\draw [very thick] (-5,0) -- (5,0);
+
+\node at (-3,7.5) {$MB_{s}$};
+
+\draw [very thick] (-5,8.5)  -- (-5,0);
+
+\node at (3, 7.5) {$MD_{f}$};
+
+\draw [very thick] (5,8.5)  -- (5,0);
+
+\draw [very thick, color=blue] (-5,8) node [left] {100} -- (5,0) node[below] {$e^{max}=20$};
+
+\draw [very thick, color=red] (-5,0) node [below] {$e^{min}=0$} -- (5,8) node [right] {100};
+
+\draw [] (-5,4) node [left] {$50$} -- (5,4) node [right] {$50$};
+
+\draw [] (0,4)  -- (0,0) node[below] {$e^{*}=10$} ; 
+
+\node at (-3, 5) {$A$};
+
+\node at (-3, 2.5) {$B$};
+
+\node at (3, 5) {$F$};
+
+\node at (3, 2.5) {$E$};
+
+\node at (1.5, 1.5) {$D$};
+
+\node at (-1.5, 1.5) {$C$};
+
+\filldraw [color = blue, opacity = 0.5] (-5,8) -- (5,0) -- (-5,0);
+
+\filldraw [color = red, opacity = 0.5] (5,8) -- (5,0) -- (-5,0);
+
+\node [] at (5,0) {\LARGE \textbullet};
+
+\end{tikzpicture}
+
+\end{minipage}
+
+\bigskip
+
+\begin{minipage}{0.48\linewidth}
+
+\underline{Bargaining}: Farmer pays $D + E$ to plant and $e^{*}$
+
+\medskip
+
+Total Benefit = \$750
+
+\medskip
+
+Total Damage = \$250
+
+\medskip
+
+Social Welfare from Steel  = \$750 - 250 = \$500
+
+\bigskip
+
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.48\linewidth}
+
+\flushleft
+\begin{tikzpicture}[scale=0.4]
+
+\draw [very thick] (-5,0) -- (5,0);
+
+\node at (-3,7.5) {$MB_{s}$};
+
+\draw [very thick] (-5,8.5)  -- (-5,0);
+
+\node at (3, 7.5) {$MD_{f}$};
+
+\draw [very thick] (5,8.5)  -- (5,0);
+
+\draw [very thick, color=blue] (-5,8) node [left] {100} -- (5,0) node[below] {$e^{max}=20$};
+
+\draw [very thick, color=red] (-5,0) node [below] {$e^{min}=0$} -- (5,8) node [right] {100};
+
+\draw [] (-5,4) node [left] {$50$} -- (5,4) node [right] {$50$};
+
+\draw [] (0,4)  -- (0,0) node[below] {$e^{*}=10$} ; 
+
+\node at (-3, 5) {$A$};
+
+\node at (-3, 2.5) {$B$};
+
+\node at (3, 5) {$F$};
+
+\node at (3, 2.5) {$E$};
+
+\node at (1.5, 1.5) {$D$};
+
+\node at (-1.5, 1.5) {$C$};
+
+\filldraw [color = blue, opacity = 0.5] (-5,8) -- (0,4) -- (0,0) -- (-5,0) -- (-5,8);
+
+\filldraw [color = red, opacity = 0.5] (-5,0) -- (0,4) -- (0,0);
+
+\node [] at (0,0) {\LARGE \textbullet};
+
+\end{tikzpicture}
+
+\end{minipage}
+
+
+\end{tcolorbox}
+
+\bigskip
+
+\begin{tcolorbox}
+
+\begin{center}
+Scenario 2: farmer has property right
+\end{center} 
+
+\bigskip
+
+\begin{minipage}{0.48\linewidth}
+
+\underline{Without Bargaining}: Plant emits $e^{min}$
+
+\bigskip
+
+Total Benefit = $\$0$
+
+\medskip
+
+Total Damage = $\$0$
+
+\medskip
+
+SW from Steel = $\$0$
+
+\bigskip
+
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.48\linewidth}
+\flushleft
+\begin{tikzpicture}[scale=0.4]
+
+\draw [very thick] (-5,0) -- (5,0);
+
+\node at (-3,7.5) {$MB_{s}$};
+
+\draw [very thick] (-5,8.5)  -- (-5,0);
+
+\node at (3, 7.5) {$MD_{f}$};
+
+\draw [very thick] (5,8.5)  -- (5,0);
+
+\draw [very thick, color=blue] (-5,8) node [left] {100} -- (5,0) node[below] {$e^{max}=20$};
+
+\draw [very thick, color=red] (-5,0) node [below] {$e^{min}=0$} -- (5,8) node [right] {100};
+
+\draw [] (-5,4) node [left] {$50$} -- (5,4) node [right] {$50$};
+
+\draw [] (0,4)  -- (0,0) node[below] {$e^{*}=10$} ; 
+
+\node at (-3, 5) {$A$};
+
+\node at (-3, 2.5) {$B$};
+
+\node at (3, 5) {$F$};
+
+\node at (3, 2.5) {$E$};
+
+\node at (1.5, 1.5) {$D$};
+
+\node at (-1.5, 1.5) {$C$};
+
+\node [] at (-5,0) {\LARGE \textbullet};
+
+\end{tikzpicture}
+\end{minipage}
+
+\bigskip
+
+\begin{minipage}{0.48\linewidth}
+
+\underline{Bargaining}: plant pays $B + C$ to emit $e^{*}$
+
+\medskip
+
+Total Benefit = \$750
+
+\medskip
+
+Total Damage = \$250
+
+\medskip
+
+SW from Steel = \$750 - \$250 = \$500
+
+\bigskip
+
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.48\linewidth}
+
+\flushleft
+
+\begin{tikzpicture}[scale=0.4]
+
+\draw [very thick] (-5,0) -- (5,0);
+
+\node at (-3,7.5) {$MB_{s}$};
+
+\draw [very thick] (-5,8.5)  -- (-5,0);
+
+\node at (3, 7.5) {$MD_{f}$};
+
+\draw [very thick] (5,8.5)  -- (5,0);
+
+\draw [very thick, color=blue] (-5,8) node [left] {100} -- (5,0) node[below] {$e^{max}=20$};
+
+\draw [very thick, color=red] (-5,0) node [below] {$e^{min}=0$} -- (5,8) node [right] {100};
+
+\draw [] (-5,4) node [left] {$50$} -- (5,4) node [right] {$50$};
+
+\draw [] (0,4)  -- (0,0) node[below] {$e^{*}=10$} ; 
+
+\node at (-3, 5) {$A$};
+
+\node at (-3, 2.5) {$B$};
+
+\node at (3, 5) {$F$};
+
+\node at (3, 2.5) {$E$};
+
+\node at (1.5, 1.5) {$D$};
+
+\node at (-1.5, 1.5) {$C$};
+
+\filldraw [color = blue, opacity = 0.5] (-5,8) -- (0,4) -- (0,0) -- (-5,0) -- (-5,8);
+
+\filldraw [color = red, opacity = 0.5] (-5,0) -- (0,4) -- (0,0);
+
+\node [] at (0,0) {\LARGE \textbullet};
+
+\end{tikzpicture}
+\end{minipage}
+\end{tcolorbox}
+
+\end{document}
