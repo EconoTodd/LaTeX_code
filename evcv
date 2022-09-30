@@ -1,10 +1,11 @@
-\documentclass[10pt]{article}
+\documentclass[12pt]{article}
 \usepackage{tikz,pgfplots}
 \usetikzlibrary{calc,patterns}
 \usepackage{amsmath}
 \usepackage{xcolor}
 
 \begin{document}
+	\Large
 	
 	\begin{tikzpicture}[scale=1.5]
 		% Axes
@@ -16,8 +17,8 @@
 		\draw (0.5,5) to [out=280,in=175] (6,0.5) node[right]{$IC_{1}$};
 		
 		% Budgets
-		\draw[] (5.25,0) node[below] {$\frac{m}{P_{x}}$} -- (0,4.5) node[left] {$M$};
-		\draw[] (3.65,0) node[below] {$\frac{m}{P_{x}'}$} -- (0,4.5);
+		\draw[] (5.25,0) node[below] {$\frac{M}{P_{x}}$} -- (0,4.5) node[left] {$M$};
+		\draw[] (3.65,0) node[below] {$\frac{M}{P_{x}'}$} -- (0,4.5);
 		
 		% EV
 		\draw[dashed, thick, color=red] (4.5,0) node[below] {} -- (0,3.75) node[left] {$M_{ev}$};
