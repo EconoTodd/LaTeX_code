@@ -1,0 +1,33 @@
+\documentclass[10pt]{article}
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{calc,patterns}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\begin{document}
+	
+	\begin{tikzpicture}[scale=1.5]
+		% Axes
+		\draw [->] (0,0) node [below] {0} -- (0,0) -- (7,0) node [right] {$x$};
+		\draw [->] (0,0) node [below] {0} -- (0,0) -- (0,6) node [above] {$composite$ $good$};
+		
+		% Indifference curve
+		\draw (1,5) to [out=280,in=175] (6,1) node[right]{$IC_{0}$};
+		\draw (0.5,5) to [out=280,in=175] (6,0.5) node[right]{$IC_{1}$};
+		
+		% Budgets
+		\draw[] (5.25,0) node[below] {$\frac{m}{P_{x}}$} -- (0,4.5) node[left] {$M$};
+		\draw[] (3.65,0) node[below] {$\frac{m}{P_{x}'}$} -- (0,4.5);
+		
+		% EV
+		\draw[dashed, thick, color=red] (4.5,0) node[below] {} -- (0,3.75) node[left] {$M_{ev}$};
+		\draw[thick,decoration={brace,mirror,raise=5pt},decorate, color=red] (-0.75, 4.5) -- (-0.75, 3.75);
+		\node [color=red] at (-1.5, 4.25) {E.V.};
+		
+		% CV
+		\draw[dashed, thick, color=blue] (4.25,0) node[below] {} -- (0,5.25) node[left] {$M_{cv}$};
+		\draw[thick,decoration={brace,mirror,raise=5pt},decorate, color=blue] (-0.75, 5.25) -- (-0.75, 4.5);
+		\node[color=blue] at (-1.5, 5) {C.V.};	
+	\end{tikzpicture}
+	
+\end{document}
